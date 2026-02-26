@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Using Public API</title>
+</head>
+<body>
+  <div class="t-main">
+  <div class="t-container">
+  <h1>Random Trivia Questions</h1>
+  <p>We can render the content from the server</p>
+  <p>We are going to use random Trivia Questions api from a different site</p>
+  </div>
+  <div class="b-container">
+  <h2 class="t-tell">Random Trivia Question:</h2>
+  <h4>And the category is:  <%= category %></h4>
+  <p></p>
+  <h5>Difficulty level:  <%= difficulty %></h5>
+  <!-- <p><%= difficulty %></p> -->
+  <h2 class="q-man"><%- question %></h2>
+
+  <details>
+    <summary>Show correct answer</summary>
+    <h4><%= answer %></h4>
+  </details>
+  </div>
+  </div>
+</body>
+</html>
